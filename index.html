@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" 
+    crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" 
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="js/weather.js" defer></script>
+    <title>Weather</title>
+</head>
+<body>
+    <h1 class="mx-5 mt-3">Weather Checker</h1>
+    <form>
+        <div class="form-group mx-5 mt-3">
+            <label for="exampleInputzipCode1"><strong>Zip Code</strong></label>
+            <input type="zipCode" class="form-control" id="zipCode">
+          
+        </div>
+                
+        
+        <button id="button" class="btn btn-primary mx-5 mt-3">Check Weather</button>
+      </form>
+
+      <div class="card mx-5 mt-3" style="width: 18rem;">
+        <div class="card-header">
+          Weather
+        </div>
+        <ul id="weather" class="list-group list-group-flush">
+          <li id="high" class="list-group-item"></li>
+          <li id="low" class="list-group-item"></li>
+          <li id="fore" class="list-group-item"></li>
+          <li id="hum" class="list-group-item"></li>
+        </ul>
+      </div>
+      
+
+</body>
+</html>
